@@ -18,7 +18,7 @@ void delete_from_begin(int arr[], int n) {
     }
     arr[n - 1] = 0;
 }
-//T(N)=O(1)
+//T(N)=O(N)
 //S(N)=O(1)
 // Delete at position
 void delete_from_position(int arr[], int n, int index) {
