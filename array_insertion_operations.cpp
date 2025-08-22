@@ -2,12 +2,14 @@
 
 #include <iostream>
 using namespace std;
-
+//T(N)=O(1)
+//S(N)=O(1)
 // Insert at end of array
 void insert_at_end(int arr[], int n, int element) {
     arr[n] = element;
 }
-
+//T(N)=O(N)
+//S(N)=O(1)
 // Insert at beginning
 void insert_at_begin(int arr[], int n, int element1) {
     for (int i = n - 1; i >= 0; i--) {
@@ -15,7 +17,8 @@ void insert_at_begin(int arr[], int n, int element1) {
     }
     arr[0] = element1;
 }
-
+//T(N)=O(N)
+//S(N)=O(1)
 // Insert at particular position or index
 void insert_at_position(int arr[], int n, int element3, int index) {
     for (int i = n - 1; i >= index; i--) {
@@ -23,7 +26,8 @@ void insert_at_position(int arr[], int n, int element3, int index) {
     }
     arr[index] = element3;
 }
-
+//T(N)=O(N)
+//S(N)=O(1)
 // Traversing of array
 void traverse(int arr[], int n) {
     for (int i = 0; i < n; i++) {
