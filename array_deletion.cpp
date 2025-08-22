@@ -2,12 +2,15 @@
 
 #include <iostream>
 using namespace std;
-
+//T(N)=O(1)
+//S(N)=O(1)
 // Delete from end
 void delete_from_end(int arr[], int n) {
     arr[n - 1] = 0;
 }
 
+//T(N)=O(N)
+//S(N)=O(1)
 // Delete from beginning
 void delete_from_begin(int arr[], int n) {
     for (int i = 1; i <= n - 1; i++) {
@@ -15,7 +18,8 @@ void delete_from_begin(int arr[], int n) {
     }
     arr[n - 1] = 0;
 }
-
+//T(N)=O(1)
+//S(N)=O(1)
 // Delete at position
 void delete_from_position(int arr[], int n, int index) {
     for (int i = index; i < n - 1; i++) {
@@ -23,7 +27,8 @@ void delete_from_position(int arr[], int n, int index) {
     }
     arr[n - 1] = 0;
 }
-
+//T(N)=O(N)
+//S(N)=O(1)
 // Traversing of array
 void traverse(int arr[], int n) {
     for (int i = 0; i < n; i++) {
